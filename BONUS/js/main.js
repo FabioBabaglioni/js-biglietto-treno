@@ -65,7 +65,14 @@ if (anni < 18){
 
 document.getElementById("nome_cognome").innerHTML = `dati viaggiatore: ${nominativo}`
 
+if (anni < 18){
+    document.getElementById("costo_finale").innerHTML = `Costo totale biglietto ${costoMinorenne}€`
+} else if (anni >= 65){
+    document.getElementById("costo_finale").innerHTML = `Costo totale biglietto${costoOver}€`
+}else{
+    document.getElementById("costo_finale").innerHTML = `Costo totale biglietto ${costoTotale}€`
 
+}
 
 
 
