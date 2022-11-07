@@ -25,7 +25,9 @@ console.log(kilometriDaPercorrere);
 
 // calcolare il costo totale del biglietto
 
+costoTotale = costoPrimo * kilometriDaPercorrere
 
+console.log(costoTotale);
 
 // se minorenne (sotto i 18 annni) allora applica sconto 20%
 
