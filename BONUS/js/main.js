@@ -63,6 +63,8 @@ if (anni < 18){
 
 }
 
+document.getElementById("nome_cognome").innerHTML = `dati viaggiatore: ${nominativo}`
+
 
 
 
