@@ -19,7 +19,9 @@ console.log(anni);
 
 // chiedere all'utente il numero dei kilometri che dovrà percorrere
 
+kilometriDaPercorrere = parseInt(prompt("Quanti chilometri dovrai percorrere?"));
 
+console.log(kilometriDaPercorrere);
 
 // calcolare il costo totale del biglietto
 
