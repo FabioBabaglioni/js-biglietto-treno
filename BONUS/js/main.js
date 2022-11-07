@@ -11,6 +11,7 @@ let scontoMinorenne
 let costoMinorenne
 let scontoOver
 let costoOver
+let cod
 
 // chiedere all'utente gli anni 
 
@@ -33,6 +34,10 @@ nominativo = prompt("inserisci nome e cognome");
 costoTotale = costoPrimo * kilometriDaPercorrere
 
 console.log(costoTotale);
+
+// calcolare codice biglietto
+
+cod = Math.floor(Math.random() * 100000) + 10000;
 
 // se minorenne (sotto i 18 annni) allora applica sconto 20%
 if (anni < 18) {
@@ -73,6 +78,12 @@ if (anni < 18){
     document.getElementById("costo_finale").innerHTML = `Costo totale biglietto ${costoTotale}€`
 
 }
+
+document.getElementById("kilometri").innerHTML = `Totale chilometri: ${kilometriDaPercorrere}`
+
+document.getElementById("codice").innerHTML = `Codice identificativo biglietto: ${cod}`
+
+
 
 
 
