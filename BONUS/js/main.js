@@ -54,6 +54,15 @@ if (anni < 18) {
 
 document.getElementById("costo_primo").innerHTML = `costo totale del biglietto per ${kilometriDaPercorrere}km è di ${costoTotale}€`
 
+if (anni < 18){
+    document.getElementById("Sconto_effettuato").innerHTML = `Totale sconto a te dedicato -${scontoMinorenne}€`
+} else if (anni >= 65){
+    document.getElementById("Sconto_effettuato").innerHTML = `Totale sconto a te dedicato -${scontoOver}€`
+}else{
+    document.getElementById("Sconto_effettuato").innerHTML = `Totale sconto a te dedicato -0€`
+
+}
+
 
 
 
