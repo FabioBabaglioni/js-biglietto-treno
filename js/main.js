@@ -30,6 +30,14 @@ costoTotale = costoPrimo * kilometriDaPercorrere
 console.log(costoTotale);
 
 // se minorenne (sotto i 18 annni) allora applica sconto 20%
-
+if (anni < 18) {
+    scontoMinorenne = (costoTotale * 20) / 100 
+    costoMinorenne = (costoTotale - scontoMinorenne);
+    console.log(costoMinorenne)
+}else if (anni >= 65){ // se over 65 applica sconto del 40%
+    scontoOver = (costoTotale * 40) / 100;
+    costoOver = (costoTotale - scontoOver);
+    console.log(costoOver)
+}
 
 // Comunicare il prezzo totale al cliente 
