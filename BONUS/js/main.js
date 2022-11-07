@@ -40,18 +40,29 @@ if (anni < 18) {
     costoMinorenne = (costoTotale - scontoMinorenne);
 
     console.log("Il tuo biglietto costerà:", costoMinorenne)
-    document.getElementById(Sconto_effettuato).innerHTML = `costo totale del biglietto scontato ${costoMinorenne}`
+
 }else if (anni >= 65){ // se over 65 applica sconto del 40%
     scontoOver = (costoTotale * 40) / 100;
     costoOver = (costoTotale - scontoOver);
 
     console.log("Il tuo biglietto costerà:", costoOver)
-    document.getElementById(Sconto_effettuato).innerHTML = `costo totale del biglietto scontato ${costoOver}`
+
 }else{
-    document.getElementById(Sconto_effettuato).innerHTML = `costo totale del biglietto scontato ${costoTotale}`
+
     console.log("Il tuo biglietto costerà:", costoTotale)
 }
 
-// document.getElementById(costo_primo).innerHTML = `costo totale del biglietto per ${kilometriDaPercorrere}km è di ${costoTotale}`
+document.getElementById("costo_primo").innerHTML = `costo totale del biglietto per ${kilometriDaPercorrere}km è di ${costoTotale}€`
+
+
+
+
+
+
+
+
+
+
+
 
 
